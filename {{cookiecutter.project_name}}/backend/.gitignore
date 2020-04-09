@@ -1,0 +1,5 @@
+*.pyc
+venv
+.idea
+.vim
+.mypy_cache
