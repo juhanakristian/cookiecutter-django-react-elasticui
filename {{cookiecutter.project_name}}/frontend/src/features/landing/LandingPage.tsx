@@ -1,18 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import {
-  EuiHeader,
-  EuiHeaderSectionItem,
-  EuiHeaderLogo,
-  EuiHeaderLinks,
-  EuiHeaderLink,
-} from '@elastic/eui'
+import { EuiHeader, EuiHeaderLink } from "@elastic/eui";
 
 import {
   EuiIcon,
   EuiHeaderSection,
   EuiHeaderSectionItemButton,
-} from '@elastic/eui'
+} from "@elastic/eui";
 
 import {
   EuiPage,
@@ -23,17 +17,12 @@ import {
   EuiPageContentHeaderSection,
   EuiPageHeader,
   EuiPageHeaderSection,
-  EuiPageSideBar,
   EuiTitle,
-} from '@elastic/eui'
+} from "@elastic/eui";
 
-import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from '@elastic/eui'
+import { css } from "@emotion/core";
 
-import { css } from '@emotion/core'
-
-interface LandingPageProps {}
-
-export default function LangdingPage(props: LandingPageProps) {
+export default function LangdingPage() {
   return (
     <React.Fragment>
       <EuiHeader>
@@ -85,5 +74,5 @@ export default function LangdingPage(props: LandingPageProps) {
         </EuiPageBody>
       </EuiPage>
     </React.Fragment>
-  )
+  );
 }
