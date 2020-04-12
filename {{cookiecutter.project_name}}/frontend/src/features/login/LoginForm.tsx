@@ -1,11 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import React, { useState } from "react";
-
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-
-import { useSelector } from "react-redux";
+import { useState } from "react";
 
 import { EuiTitle, EuiButton, EuiFieldText } from "@elastic/eui";
 import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from "@elastic/eui";
@@ -13,7 +8,7 @@ import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from "@elastic/eui";
 import { css } from "@emotion/core";
 
 import { useThunkDispatch } from "../../app/store";
-import { login, selectToken } from "./loginSlice";
+import { login } from "./loginSlice";
 
 const container = css`
   display: flex;
@@ -24,7 +19,6 @@ const container = css`
 
 export default function LoginForm() {
   const dispatch = useThunkDispatch();
-  const token = useSelector(selectToken);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -76,4 +70,3 @@ export default function LoginForm() {
     </div>
   );
 }
-

@@ -4,11 +4,10 @@ import "@elastic/eui/dist/eui_theme_light.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
 import LoginForm from "./features/login/LoginForm";
-import LandingPage from "./features/landing/LandingPage";
+import Page from "./features/shared/Page";
 
 import { store } from "./app/store";
 
@@ -22,7 +21,7 @@ function App() {
               <LoginForm />
             </Route>
             <Route path="/">
-              <LandingPage />
+              <Page title="Front page">Some content</Page>
             </Route>
           </Switch>
         </div>
