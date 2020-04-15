@@ -1,10 +1,22 @@
 # cookiecutter-django-react-elasticui
 
-# TODO
-- Docker compose
-- cookiecutter database config
-- cookiecutter Django settings
-- pytest config
-- react-testing-library
-- django-allauth
+## Libraries
 
+### Backend
+* django
+* djangorestframework
+* djangorestframework-simplejwt
+* django-cors-headers
+
+### Frontend
+* react
+* redux
+* react-redux
+* react-router-dom
+* elasticui
+
+### Testing
+* react-testing-library
+* pytest
+
+## Screenshots
