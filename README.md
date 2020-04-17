@@ -19,4 +19,3 @@
 * react-testing-library
 * pytest
 
-## Screenshots

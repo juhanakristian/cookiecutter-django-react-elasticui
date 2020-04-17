@@ -25,6 +25,9 @@ function App() {
             <Route path="/about">
               <Page title="About">Other content</Page>
             </Route>
+            <Route path="/blog">
+              <Page title="Blog">Blog posts</Page>
+            </Route>
             <Route path="/">
               <Page title="Front page">Some content</Page>
             </Route>

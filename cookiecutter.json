@@ -1,3 +1,7 @@
 {
-  "project_name": "project"
+  "project_name": "django-react-elasticui-project",
+  "debug": "on",
+  "secret_key": "changesthis",
+  "allowed_hosts": "http://localhost:8000",
+  "cors_origin_whitelist": "http://locahost:3000"
 }

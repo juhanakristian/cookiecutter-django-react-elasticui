@@ -1,2 +1,4 @@
 .mypy_cache
 *.venv
+{{cookiecutter.project_name}}/backend/.env
+{{cookiecutter.project_name}}/backend/development.db

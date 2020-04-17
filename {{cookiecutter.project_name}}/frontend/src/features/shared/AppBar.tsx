@@ -12,9 +12,7 @@ import {
 
 import { EuiCustomHeaderLink } from "./EuiCustomLink";
 
-interface AppBarProps {}
-
-export default function AppBar(props: AppBarProps) {
+export default function AppBar() {
   return (
     <EuiHeader position="fixed">
       <EuiHeaderSection grow={false}>
