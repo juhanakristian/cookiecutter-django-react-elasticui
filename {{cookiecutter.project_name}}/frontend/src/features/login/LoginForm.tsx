@@ -2,12 +2,14 @@
 import { jsx } from "@emotion/core";
 import { useState } from "react";
 
+import { useDispatch } from "react-redux";
+
 import { EuiTitle, EuiButton, EuiFieldText } from "@elastic/eui";
 import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from "@elastic/eui";
 
 import { css } from "@emotion/core";
 
-import { useThunkDispatch } from "../../app/store";
+import { AppDispatch } from "../../app/store";
 import { login } from "./loginSlice";
 
 const container = css`
@@ -18,7 +20,7 @@ const container = css`
 `;
 
 export default function LoginForm() {
-  const dispatch = useThunkDispatch();
+  const dispatch: AppDispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 

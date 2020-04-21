@@ -1,5 +1,11 @@
 import { useDispatch } from "react-redux";
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import {
+  configureStore,
+  ThunkAction,
+  ThunkDispatch,
+  Action,
+} from "@reduxjs/toolkit";
+
 import loginReducer from "../features/login/loginSlice";
 
 export const store = configureStore({
@@ -15,4 +21,5 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >;
+export type AppDispatch = ThunkDispatch<RootState, void, Action<string>>;
 export const useThunkDispatch = () => useDispatch<typeof store.dispatch>();
